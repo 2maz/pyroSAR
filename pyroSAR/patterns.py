@@ -100,6 +100,7 @@ safe = r'^(?P<sensor>S1[ABCD])_' \
        r'(?P<orbitNumber>[0-9]{6})_' \
        r'(?P<dataTakeID>[0-9A-F]{6})_' \
        r'(?P<productIdentifier>[0-9A-F]{4})' \
+       r'(?:_(?P<format>COG))' \
        r'\.SAFE$'
 
 tsx = r'^(?P<sat>T[DS]X1)_SAR__' \

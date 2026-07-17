@@ -1906,6 +1906,7 @@ class SAFE(ID):
                           r'(?P<stop>[0-9]{8}t[0-9]{6})-' \
                           r'(?:[0-9]{6})-(?:[0-9a-f]{6})-' \
                           r'(?P<id>[0-9]{3})' \
+                          r'(?:-(?P<format>cog))' \
                           r'\.xml$'
         
         self.examine(include_folders=True)
